@@ -1,0 +1,297 @@
+html, body {
+  font-size: 16px;
+  height: 100%;
+}
+
+
+h1 {
+  font-size: 28px;
+}
+
+.header {
+  text-align: center;
+  background-color: #e7e7e7;
+  border-bottom: 1px solid #e3e3e3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.header h1 {
+  padding-top: 7px;
+  padding-bottom: 5px;
+}
+
+.header a svg {
+  color: #202020;
+  margin-top: 8px;
+}
+
+.page {
+  padding-top: 70px;
+  min-height: 100%;
+}
+
+
+/* Game */
+.list-player-name {
+  position: absolute;
+  padding-left: 5px;
+  top: 17px;
+}
+
+
+.chat-list-item {
+
+}
+
+
+
+
+/* HAMBURGER */
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.hamburger-change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.hamburger-change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.hamburger-change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+/* SETTINGS */
+
+.slide-container {
+  width: 100%;
+  position: relative;
+  display: block;
+  padding-right: 10px !important;
+}
+
+label.mm-toggle {
+  top: 20px !important;
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider-text {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  pointer-events: none;
+  color: grey;
+  font-size: 12px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px;
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+}
+
+.block-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  z-index: 10;
+  text-align: center;
+  padding: 10px;
+}
+
+.block-overlay-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+/* DASHBOARD */
+.dashb-poll {
+  cursor: pointer;
+}
+
+/* Messenger */
+.chat-input {
+  position: fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  line-height: 20px;
+  font-size: 20px;
+  background-color: white;
+
+}
+
+.chat-container-wrapper
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 54px;
+  padding-bottom: 38px;
+}
+
+#chat-text-container
+{
+  width: 100%;
+  height: 100%;
+  overflow:scroll;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.chat-container-bubble-r {
+  text-align:right;
+  padding-right:10px;
+  margin-bottom:10px;
+}
+
+.chat-container-bubble-l {
+  text-align:left;
+  padding-left:10px;
+  margin-bottom:10px;
+}
+
+.chat-bubble-sender {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: -5px;
+  text-align: left;
+}
+
+.chat-bubble-time {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.chat-bubble-text {
+  font-weight: 500;
+}
+
+.chat-bubble {
+  display: inline-block;
+  border-radius: 11px;
+  color: white;
+  padding-left: 6px;
+  padding-right: 6px;
+  min-width: 30%;
+  box-shadow: 1px 2px 3px #aeaeae;
+
+  max-width: 90%;
+  overflow-wrap: break-word;
+}
+
+.chat-bubble-blue
+{
+  background-color: #007bff;
+}
+
+.chat-bubble-grey
+{
+  background-color: #6c757d;
+}
+
+
+.cookie-banner
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding-top: 10px;
+  height: 80px;
+  text-align: center;
+}
+
+.tut-overlay
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+  display: none;
+}
+
+.tut-wrapper
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.tut-box
+{
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  display: none;
+}

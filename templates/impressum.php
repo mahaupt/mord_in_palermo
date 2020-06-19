@@ -22,13 +22,8 @@
       <div class="col-12 col-md-6 text-left">
 
 <h2>Impressum</h2>
-Marcel Haupt<br>
-Nietzschestraße 18<br>
-28201 Bremen<br>
-Deutschland<br>
 <br>
-Tel.: +49 421 89782164<br>
-EMail.: info@marcel-haupt.eu<br>
+<br>
 
 
 <br><br>

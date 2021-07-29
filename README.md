@@ -16,6 +16,6 @@ index.php - Startseite
 game.php - Spielseite  
 webhook.php - JS Webhook
 
-### Authoren
+### Autoren
 #### Martin Hennings - Frontend
 #### Marcel Haupt - Backend
